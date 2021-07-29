@@ -1,0 +1,23 @@
+.icon {
+  padding-left: 30px;
+}
+
+.subpages {
+  padding-right: 40px;
+}
+
+li {
+  margin: 10px;
+  line-height: 3px;
+  color: black;
+}
+
+.hero {
+  background: #80c0ce;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

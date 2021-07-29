@@ -1,9 +1,13 @@
+import React from "react";
+import "./Homepage.css";
+import HomepageMainContent from "./HomepageMainContent";
+
 export default function Homepage() {
   return (
     <div>
-      <div className="container">
+      <div className="container-fullwidth">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand icon" href="/">
             Clinical Nutrition Calc
           </a>
           <button
@@ -17,11 +21,14 @@ export default function Homepage() {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav subpages">
               <li class="nav-item active">
                 <a class="nav-link" href="/">
-                  Home <span class="sr-only">(current)</span>
+                  Home <span class="sr-only"></span>
                 </a>
               </li>
               <li class="nav-item">
@@ -35,7 +42,7 @@ export default function Homepage() {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="/">
+                <a class="nav-link" href="/">
                   About
                 </a>
               </li>
@@ -43,6 +50,10 @@ export default function Homepage() {
           </div>
         </nav>
       </div>
+      <div className="hero">
+        <hi>Hello There</hi>
+      </div>
+      <HomepageMainContent />
     </div>
   );
 }
